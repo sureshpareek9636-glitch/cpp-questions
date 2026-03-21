@@ -1,0 +1,361 @@
+#include<bits/stdc++.h>
+using namespace std;
+// int main()
+// {
+//     int n=1234;
+//     int rev=0;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         rev=rev*10+digit;
+//         n=n/10;
+//     }
+//     cout<<rev;
+// }
+// q2
+// int main()
+// {
+//     int n=121;
+//   int rev=0;
+//     int p=n;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         rev=rev*10+digit;
+//         n=n/10;
+//     }
+//     if(rev==p)
+//     cout<<"palindrome";
+//     else
+    
+//         cout<<"np";
+    
+// }
+// q3
+// int main()
+// {
+//     int n=123;
+//     int count=0;
+//     while(n>0)
+//     {
+//       count++;
+//         n=n/10;
+        
+//     }
+//     cout<<count;
+    
+// }
+// q4
+// int main()
+// {
+// int n;
+// int sum=0;
+// cout<<"enter n";
+// cin>>n;
+// int p=n;
+// int t=n;
+// int digits=0;
+// while(t>0)
+// {
+//     t=t/10;
+//     digits++;
+// }
+// while(n>0)
+// {
+//     int digit=n%10;
+//     sum+=pow(digit,digits);
+//     n=n/10;
+    
+// }
+// if(sum==p)
+// cout<<"armstrong";
+// else
+// cout<<"not armstrong";
+// }
+// q5
+// int main()
+// {
+// int n=123;
+// int sum=0;
+// while(n>0)
+// {
+//     int digit=n%10;
+//     sum+=digit;
+//     n=n/10;
+    
+// }
+// cout<<sum;
+// }
+// q6
+// int main()
+// {
+//     int n=123;
+//     int product=1;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         product*=digit;
+//         n=n/10;
+//     }
+//     cout<<product;
+// }
+// q7
+// int main()
+// {
+// int n=123456;
+// int even=0;
+// int odd=0;
+// while(n>0)
+// {
+//     int digit=n%10;
+//     if(digit%2==0)
+//     {
+//         even++;
+//     }else
+//     {
+//         odd++;
+//     }
+//     n=n/10;
+// }
+// cout<<even<<endl;
+// cout<<odd;
+// }
+// q8
+// int main()
+// {
+//     int n=5;
+//     int fact=1;
+//     for(int i=1;i<=5;i++)
+//     {
+//         fact*=i;
+        
+//     }
+//     cout<<fact;
+    
+// }
+// q9
+// int main()
+// {
+// int n=10;
+// int counter=0;
+// for(int i=2;i<=n;i++)
+// {
+//     if(n%i==0)
+//     {
+//         counter++;
+// } 
+    
+// }
+// if(counter>1)
+// cout<<"np";
+// else
+// cout<<"p";
+// }
+// int main()
+// {
+//     int n=12;
+//     for(int i=1;i<=n;i++)
+//     {
+//         if(n%i==0)
+//         {
+//             cout<<i<<" ";
+//         }
+//     }
+// }
+
+// q 12 
+// int main()
+// {
+//     int n=12345;
+//     int frist=0;
+//     int last=n%10;
+//     n=n/10;
+//     vector<int>v;
+    
+//     while(n>0)
+//     {
+//         if(n>10)
+//         {
+//             v.push_back(n%10);
+//         }else
+//         {
+//             frist=n;
+//         }
+//         n=n/10;
+//     }
+//     reverse(v.begin(),v.end());
+//     int ans=last;
+//     for(auto x:v)
+//     {
+//         ans=ans*10+x;
+        
+//     }
+//     ans=ans*10+frist;
+//         cout<<ans;
+//     }
+    // q12
+//     int main()
+// {
+//     int n=123456;
+//     int sum=0;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         if(digit%2==0)
+//         {
+//             sum+=digit;
+//         }
+//         n=n/10;
+//     }
+//     cout<<"even sum"<<sum;
+// }
+// q13
+// int main()
+// {
+//     int n=123456789;
+//     int max=0;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         if(max<digit)
+//         {
+//             max=digit;
+            
+//         }
+//         n=n/10;
+//     }
+//     cout<<max;
+        
+//     }
+// q14
+// int main()
+// {
+//     int n=58329;
+//     int smallest=INT_MAX;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         if(smallest>digit)
+//         {
+//             smallest=digit;
+//         }
+//         n=n/10;
+//     }
+//     cout<<smallest;
+    
+// }
+// q15
+// int main()
+// {
+//     int n=1002030;
+//     int count=0;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         if(digit==0)
+//         {
+//             count++;
+//         }
+//         n=n/10;
+//     }
+//     cout<<count;
+    
+// }
+// q16
+// int main()
+// {
+//     int n=4567;
+    
+//     int last=n%10;
+    
+//     int frist=n;
+//     while(frist>=10)
+//     {
+//         frist=frist/10;
+//     }
+//     int sum=0;*
+//         }
+//     }
+// }
+// q17
+// int main()
+// {
+//     int n=145;
+//     int temp=n;
+//     int sum=0;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         int fact=1;
+//         for(int i=1;i<=digit;i++)
+//         {
+//             fact*=i;
+//         }
+//         sum+=fact;
+//         n=n/10;
+//     }
+//     if(temp==sum)
+//     {
+//         cout<<"strong number";
+        
+//     }
+//     else
+//     {
+//         cout<<"not strong number";
+//     }
+// }
+// q18
+// int main()
+// {
+//     int n=16;
+//     bool flag=false;
+//     for(int i=1;i*i<=n;i++)
+//     {
+//         if(i*i==n)
+//         {
+//             flag = true;
+//             break;
+//         }
+//     }
+//     if(flag)
+//     {
+//         cout<<"perfect square";
+//     }
+//     else
+//     {
+//         cout<<"not perfect square";
+//     }
+// }
+// q19
+// int  main()
+// {
+//     int n=123333445;
+//     int d=3;
+//     int count=0;
+//     while(n>0)
+//     {
+//         int digit=n%10;
+//         if(digit==d)
+//         {
+//             count++;
+//         }
+//         n=n/10;
+//     }
+//     cout<<count;
+// }
+// q20
+// int main()
+// {
+// int n=123;
+// int sum=0;
+// while(n>0)
+// {
+//     int digit=n%10;
+//     sum+=digit*digit;
+//     n=n/10;
+    
+    
+// }
+
+// cout<<sum;
+// }
