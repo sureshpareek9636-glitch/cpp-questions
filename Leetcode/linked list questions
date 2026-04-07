@@ -1,0 +1,33 @@
+leetcode 206 linked list
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode*pre=NULL;
+        ListNode*curr=head;
+        ListNode*Next=head;
+        while(curr!=NULL)
+        {
+            Next=curr->next;
+            curr->next=pre;
+            pre=curr;
+            curr=Next;
+        }
+        return pre;
+             
+    }
+};
+leetcode 876 middle linkedlist
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+       ListNode*slow=head;
+       ListNode*fast=head;
+       while(fast!=NULL&&fast->next!=NULL) 
+       {
+        slow=slow->next;
+        fast=fast->next->next;
+
+       }     
+       return slow;
+    }
+};
